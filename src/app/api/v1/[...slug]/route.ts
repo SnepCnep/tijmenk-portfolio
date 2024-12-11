@@ -7,5 +7,5 @@ export async function GET(request: NextRequest, context: { params: { slug: strin
     const { slug } = context.params;
     const [username, ...rest] = slug;
     
-
+    return NextResponse.json({ username, rest });
 }
