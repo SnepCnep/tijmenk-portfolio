@@ -27,22 +27,22 @@ const navbarItems = [
     {
         title: "Home",
         description: "Go back to the home page",
-        href: "/",
+        href: "/#intro",
     },
     {
         title: "Projects",
         description: "View my projects",
-        href: "#projects",
+        href: "/#projects",
     },
     {
         title: "About",
         description: "Learn more about me",
-        href: "#about",
+        href: "/#about",
     },
     {
         title: "Blog",
         description: "Read my blog posts",
-        href: "#blog",
+        href: "/#blog",
     },
 ];
 
