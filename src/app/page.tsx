@@ -1,6 +1,5 @@
 // Config
 import { projects } from "@/config";
-import { JSX } from "react";
 
 // UI Components
 import Navbar from "@/components/navbar";
