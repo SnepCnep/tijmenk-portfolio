@@ -1,11 +1,12 @@
-// Config
-import { projects } from "@/config";
+// Database
+import { getMyProjects } from "@/lib/actions/portfolio";
 
 // UI Components
 import Navbar from "@/components/navbar";
 import ProjectCard from "@/components/projectShowCase";
 
-export default function Home() {
+export default async function Home() {
+  const projects = await getMyProjects();
 
   return (
     <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth bg-zinc-900 text-foreground">
@@ -34,8 +35,16 @@ export default function Home() {
       >
         <h3 className="text-4xl font-bold text-foreground mb-12">My Projects</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+          {projects && projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              links={project.links.map(link => ({ url: link, label: link, name: link })) || []}
+              tags={project.tags}
+              year={project.year || undefined}
+              role={project.role || undefined}
+            />
           ))}
         </div>
       </section>
