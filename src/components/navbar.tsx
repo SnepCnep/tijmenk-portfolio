@@ -30,14 +30,14 @@ const navbarItems = [
         href: "/",
     },
     {
-        title: "About",
-        description: "Learn more about me",
-        href: "#about",
-    },
-    {
         title: "Projects",
         description: "View my projects",
         href: "#projects",
+    },
+    {
+        title: "About",
+        description: "Learn more about me",
+        href: "#about",
     },
     {
         title: "Blog",
