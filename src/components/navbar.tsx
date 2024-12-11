@@ -55,10 +55,10 @@ const Navbar = () => {
                 <NavigationMenu>
                     <NavigationMenuList className="flex gap-6">
                         {navbarItems.map((item) => (
-                            <TooltipProvider>
+                            <TooltipProvider key={item.title}>
                                 <Tooltip>
                                     <TooltipTrigger>
-                                        <NavigationMenuItem key={item.title} className={navigationMenuTriggerStyle()}>
+                                        <NavigationMenuItem className={navigationMenuTriggerStyle()}>
                                             <Link href={item.href}>
                                                 {item.title}
                                             </Link>
