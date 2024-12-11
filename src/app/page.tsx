@@ -14,7 +14,7 @@ export default function Home() {
         className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-zinc-900 to-black text-center"
       >
         <h1 className="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl">
-          Welcome to <span className="text-primary">My Portfolio</span>
+          Welcome to <span className="text-primary">My Portfolio</span>.
         </h1>
         <h2 className="text-xl sm:text-2xl mt-6 font-medium text-muted-foreground">
           Hi, I&apos;m{" "}
@@ -30,13 +30,12 @@ export default function Home() {
       >
         <h3 className="text-3xl font-bold text-foreground">About Me</h3>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          I am a passionate software developer with a strong focus on creating
-          efficient and scalable applications. I love working on projects that
-          solve real-world problems and push the boundaries of technology.
+          COMING SOON
         </p>
       </section>
 
       {/* Projects Section */}
+
       <section
         id="projects"
         className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-zinc-900 to-black text-center"
