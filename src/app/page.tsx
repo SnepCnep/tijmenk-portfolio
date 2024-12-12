@@ -40,7 +40,7 @@ export default async function Home() {
               title={project.title}
               description={project.description}
               links={project.links || []}
-              tags={project.tags}
+              tags={project.tags || []}
               year={project.year || undefined}
               role={project.role || undefined}
             />
