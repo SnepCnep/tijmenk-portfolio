@@ -1,12 +1,11 @@
-// Database
-import { getMyProjects } from "@/lib/actions/portfolio";
+// Config
+import { projects } from "@/config";
 
 // UI Components
 import Navbar from "@/components/navbar";
 import ProjectCard from "@/components/projectShowCase";
 
 export default async function Home() {
-  const projects = await getMyProjects();
 
   return (
     <main className="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth bg-zinc-900 text-foreground">
@@ -40,7 +39,7 @@ export default async function Home() {
               key={index}
               title={project.title}
               description={project.description}
-              links={project.links.map(link => ({ url: link, label: link, name: link })) || []}
+              links={project.links || []}
               tags={project.tags}
               year={project.year || undefined}
               role={project.role || undefined}

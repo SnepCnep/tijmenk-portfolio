@@ -27,6 +27,7 @@ const tagIconMap: { [key: string]: JSX.Element } = {
   "Node.js": <SiNodedotjs className="mr-1" size={14} />,
   "Express": <SiExpress className="mr-1" size={14} />,
   "Jest": <SiJest className="mr-1" size={14} />
+
 };
 
 interface Link {

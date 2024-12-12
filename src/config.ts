@@ -1,24 +1,20 @@
 export const projects = [
+  {
+    title: "Portfolio Website",
+    description: "Welcome to my portfolio website, where you can explore my projects, skills, and experiences. Here, you'll find a showcase of the work I'm most proud of, details about my professional background, and insights into the technologies and tools I specialize in. Feel free to navigate through the site to learn more about what I do and how I can contribute to your next project or collaboration!",
+    links: [
     {
-      title: "Test Project",
-      description: "Dit is een testproject voor demonstratie. Deze app toont hoe je React, TypeScript en Next.js kunt combineren voor een moderne webapplicatie. Het gebruikt TailwindCSS voor snelle styling en heeft enkele Jest tests voor betrouwbaarheid.",
-      links: [
-        {
-          name: "GitHub",
-          url: "https://github.com/"
-        },
-        {
-          name: "Live Demo",
-          url: "https://example.com/"
-        },
-        {
-          name: "Documentation",
-          url: "https://example.com/docs"
-        }
-      ],
-      tags: ["React", "TypeScript", "Next.js", "TailwindCSS", "Jest"],
-      year: 2023,
-      role: "Front-End Developer"
+      name: "Tijmenk.com",
+      url: "https://tijmenk.com"
     },
-  ];
+    {
+      name: "Tijmenk.nl",
+      url: "https://tijmenk.nl/"
+    }
+    ],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+    year: 2024,
+    role: "Developer"
+  },
+];
   
