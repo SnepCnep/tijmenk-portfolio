@@ -51,7 +51,6 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-gray-900 to-transparent backdrop-blur-md">
             <div className="container mx-auto flex justify-between items-center h-16 px-4 lg:px-8">
                 <div className="text-2xl font-bold text-chart-1">TijmenK</div>
-
                 <NavigationMenu>
                     <NavigationMenuList className="flex gap-6">
                         {navbarItems.map((item) => (

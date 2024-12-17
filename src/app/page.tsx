@@ -49,7 +49,7 @@ export default async function Home() {
       </section>
 
       {/* About Section */}
-      <section
+      {/* <section
         id="about"
         className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-zinc-900 to-black text-center px-4"
       >
@@ -61,10 +61,10 @@ export default async function Home() {
           <h1>My Github</h1>
           
         </div>
-      </section>
+      </section> */}
 
       {/* Blog Section */}
-      <section
+      {/* <section
         id="blog"
         className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-zinc-900 to-black text-center px-4"
       >
@@ -73,7 +73,7 @@ export default async function Home() {
           Welcome to my blog! Here, I share insights, tutorials, and stories
           about my experiences as a developer. Stay tuned for updates!
         </p>
-      </section>
+      </section> */}
     </main>
   );
 }
