@@ -19,7 +19,7 @@ import {
 
 
 // Icons
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 import { FaCode, FaServer } from "react-icons/fa";
 
 export default async function Home() {
