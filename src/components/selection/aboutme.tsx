@@ -15,6 +15,16 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 
+interface GithubUser {
+    avatar_url: string;
+    bio: string;
+    name: string;
+    location: string;
+    followers: number;
+    following: number;
+    public_repos: number;
+}
+
 // Icons
 import { SiGithub } from "react-icons/si";
 import { FaCode, FaServer } from "react-icons/fa";
@@ -22,7 +32,7 @@ import { FaCode, FaServer } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const AboutMe = () => {
-    const [user, setUser] = useState<any>({
+    const [user, setUser] = useState<GithubUser>({
         avatar_url: "",
         bio: "",
         name: "",
