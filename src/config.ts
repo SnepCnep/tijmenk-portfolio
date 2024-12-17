@@ -5,12 +5,28 @@ export const projects = [
     links: [
     {
       name: "Tijmenk.com",
+      type: "preview",
       url: "https://tijmenk.com"
     },
     {
       name: "Tijmenk.nl",
+      type: "preview",
       url: "https://tijmenk.nl/"
     }
+    ],
+    tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
+    year: 2024,
+    role: "Developer"
+  },
+  {
+    title: "license Manager",
+    description: "Coming soon",
+    links: [
+    {
+      name: "Tijmenk.com",
+      type: "preview",
+      url: "https://licensemanager.snepcnep.nl",
+    },
     ],
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
     year: 2024,

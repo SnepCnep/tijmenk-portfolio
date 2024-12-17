@@ -32,6 +32,7 @@ const tagIconMap: { [key: string]: JSX.Element } = {
 
 interface Link {
   name: string;
+  type?: string;
   url: string;
 }
 
@@ -48,6 +49,7 @@ function getLinkIcon(linkName: string): JSX.Element {
   const lower = linkName.toLowerCase();
   if (lower.includes("github")) return <SiGithub className="inline mr-1" />;
   if (lower.includes("demo") || lower.includes("live")) return <FiExternalLink className="inline mr-1" />;
+  if (lower.includes("preview")) return <FiExternalLink className="inline mr-1" />;
   if (lower.includes("doc")) return <SiMdbook className="inline mr-1" />;
   return <FiExternalLink className="inline mr-1" />;
 }
@@ -124,7 +126,7 @@ const ProjectCard = ({
                     rel="noopener noreferrer"
                     className="flex items-center text-sm text-primary hover:underline hover:text-primary-foreground transition-colors"
                   >
-                    {getLinkIcon(link.name)}
+                    {getLinkIcon(link.type || link.name)}
                     {link.name}
                   </a>
                 ))}

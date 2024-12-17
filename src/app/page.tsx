@@ -57,6 +57,10 @@ export default async function Home() {
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
           COMING SOON
         </p>
+        <div>
+          <h1>My Github</h1>
+          
+        </div>
       </section>
 
       {/* Blog Section */}
