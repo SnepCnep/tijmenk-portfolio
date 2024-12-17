@@ -9,10 +9,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
 } from "@/components/ui/tooltip"
 
 // Icons
@@ -43,7 +43,7 @@ const AboutMe = () => {
     return (
         <section
             id="about"
-            className="snap-start flex flex-col items-center justify-center min-h-screen py-20 bg-gradient-to-b from-zinc-900 to-black text-center px-4"
+            className="snap-start flex flex-col items-center justify-center min-h-screen py-20 bg-radial text-center px-4 sm:mt-6"
         >
             <h3 className="text-4xl font-bold text-foreground mb-8">About Me</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">

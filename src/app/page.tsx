@@ -14,7 +14,7 @@ export default async function Home() {
       {/* Intro Section */}
       <section
         id="intro"
-        className="snap-start flex flex-col items-center justify-center h-screen bg-gradient-to-b from-zinc-900 to-black text-center px-4"
+        className="snap-start flex flex-col items-center justify-center min-h-screen py-20 bg-radial text-center px-4 sm:mt-6"
       >
         <h1 className="text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl">
           Welcome to <span className="text-primary">My Portfolio</span>.
