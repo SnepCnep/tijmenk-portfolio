@@ -23,7 +23,7 @@ export const projects = [
     description: "Coming soon",
     links: [
     {
-      name: "Tijmenk.com",
+      name: "License Manager",
       type: "preview",
       url: "https://licensemanager.snepcnep.nl",
     },
