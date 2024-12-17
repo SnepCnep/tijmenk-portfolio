@@ -33,4 +33,6 @@ export const projects = [
     role: "Developer"
   },
 ];
-  
+
+
+export const githubUsername = "SnepCnep";
