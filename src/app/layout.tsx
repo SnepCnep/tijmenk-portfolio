@@ -15,12 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TijmenK",
   description: "Mijn naam is Tijmen en ik ben een software ontwikkelaar.",
-  openGraph: {
-    title: "TijmenK",
-    description: "Mijn naam is Tijmen en ik ben een software ontwikkelaar.",
-    type: "website",
-    url: "https://tijmenk.com/",
-  },
 };
 
 export default function RootLayout({
