@@ -4,6 +4,23 @@ import { projects } from "@/config";
 // UI Components
 import ProjectCard from "@/components/projectShowCase";
 
+// Types
+interface ProjectLink {
+    name: string;
+    type: string;
+    url: string;
+}
+
+interface Project {
+    title: string;
+    description: string;
+    links?: ProjectLink[];
+    tags?: string[];
+    year?: number;
+    role?: string;
+}
+
+
 const Projects = () => {
     return (
         <section
@@ -12,7 +29,7 @@ const Projects = () => {
         >
             <h3 className="text-4xl font-bold text-foreground mb-12">My Projects</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {projects && projects.map((project, index) => (
+                {projects && projects.map((project: Project, index: number) => (
                     <ProjectCard
                         key={index}
                         title={project.title}
