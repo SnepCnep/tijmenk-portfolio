@@ -43,6 +43,7 @@ interface ProjectCardProps {
   tags: string[];
   year?: number;
   role?: string;
+  status?: string;
 }
 
 function getLinkIcon(linkName: string): JSX.Element {
@@ -60,7 +61,8 @@ const ProjectCard = ({
   links,
   tags,
   year,
-  role
+  role,
+  status
 }: ProjectCardProps) => {
   return (
     <Card
@@ -86,6 +88,11 @@ const ProjectCard = ({
             {role && (
               <p>
                 <span className="font-semibold text-foreground">Role:</span> {role}
+              </p>
+            )}
+            {status && (
+              <p>
+                <span className="font-semibold text-foreground">Status:</span> {status}
               </p>
             )}
           </div>

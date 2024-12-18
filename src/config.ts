@@ -1,7 +1,9 @@
+import { stat } from "fs";
+
 export const projects = [
   {
     title: "Portfolio Website",
-    description: "Welcome to my portfolio website, where you can explore my projects, skills, and experiences. Here, you'll find a showcase of the work I'm most proud of, details about my professional background, and insights into the technologies and tools I specialize in. Feel free to navigate through the site to learn more about what I do and how I can contribute to your next project or collaboration!",
+    description: "Welcome to my portfolio website, where you can explore my projects, skills, and experiences. Here, you'll find a showcase of the work I'm most proud of, details about my professional background, and insights into the technologies and tools I specialize in.",
     links: [
     {
       name: "Tijmenk.com",
@@ -16,20 +18,22 @@ export const projects = [
     ],
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
     year: 2024,
+    status: "In Progress",
     role: "Developer"
   },
   {
-    title: "license Manager",
-    description: "Coming soon",
+    title: "Dummy Freak",
+    description: "This is a website to create and manage custom dummy api's. It's a tool for developers to quickly create a dummy api for testing purposes. The website is built with React, TypeScript, and TailwindCSS.",
     links: [
     {
-      name: "License Manager",
+      name: "Dummy Freak",
       type: "preview",
-      url: "https://licensemanager.snepcnep.nl",
+      url: "https://dummyfreak.tijmenk.nl",
     },
     ],
     tags: ["React", "TypeScript", "Next.js", "TailwindCSS"],
     year: 2024,
+    status: "In Progress",
     role: "Developer"
   },
 ];

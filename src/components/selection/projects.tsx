@@ -18,6 +18,7 @@ interface Project {
     tags?: string[];
     year?: number;
     role?: string;
+    status?: string;
 }
 
 
@@ -38,6 +39,7 @@ const Projects = () => {
                         tags={project.tags || []}
                         year={project.year || undefined}
                         role={project.role || undefined}
+                        status={project.status || undefined}
                     />
                 ))}
             </div>
