@@ -1,6 +1,6 @@
 "use client"
 // Config
-import { githubUsername } from "@/config";
+import { githubUsername, skills } from "@/config";
 import { fetchGithubUser, fetchGithubFollowers } from "@/lib/github";
 
 // UI Components
@@ -141,19 +141,9 @@ const AboutMe = () => {
                     </div>
                     <h4 className="text-2xl font-bold text-foreground mb-4">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary">JavaScript</Badge> {/* Taal */}
-                        <Badge variant="secondary">TypeScript</Badge> {/* Taal */}
-                        <Badge variant="secondary">Express</Badge> {/* JS Web Server */}
-
-                        <Badge variant="secondary">Mysql</Badge> {/* Database */}
-                        <Badge variant="secondary">PostgreSQL</Badge> {/* Database */}
-
-                        <Badge variant="secondary">PHP</Badge>  {/* Taal */}
-                        <Badge variant="secondary">Laravel</Badge>  {/* Framework */}
-
-                        <Badge variant="secondary">React</Badge>  {/* Taal */}
-                        <Badge variant="secondary">Next.js</Badge> {/* Framework */}
-                        <Badge variant="secondary">WS</Badge>  {/* WebSocket */}
+                        { skills.map((skill, index) => (
+                            <Badge key={index} variant="secondary">{skill}</Badge>
+                        ))}
                     </div>
                 </div>
             </div>
