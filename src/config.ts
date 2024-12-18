@@ -1,5 +1,3 @@
-import { stat } from "fs";
-
 export const projects = [
   {
     title: "Portfolio Website",
