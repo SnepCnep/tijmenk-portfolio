@@ -30,17 +30,8 @@ const Projects = () => {
         >
             <h3 className="text-4xl font-bold text-foreground mb-12">My Projects</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {projects && projects.map((project: Project, index: number) => (
-                    <ProjectCard
-                        key={index}
-                        title={project.title}
-                        description={project.description}
-                        links={project.links || []}
-                        tags={project.tags || []}
-                        year={project.year || undefined}
-                        role={project.role || undefined}
-                        status={project.status || undefined}
-                    />
+                {projects && projects.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
                 ))}
             </div>
         </section>
