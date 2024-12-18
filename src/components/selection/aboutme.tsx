@@ -1,7 +1,7 @@
 "use client"
 // Config
 import { githubUsername } from "@/config";
-import { fetchGithubUser } from "@/lib/github";
+import { fetchGithubUser, fetchGithubFollowers } from "@/lib/github";
 
 // UI Components
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
@@ -20,9 +20,14 @@ interface GithubUser {
     bio: string;
     name: string;
     location: string;
-    followers: number;
+    followers: string[];
     following: number;
     public_repos: number;
+}
+
+interface GithubFollowers {
+    avatar_url: string;
+    login: string;
 }
 
 // Icons
@@ -37,17 +42,21 @@ const AboutMe = () => {
         bio: "",
         name: "",
         location: "",
-        followers: 0,
+        followers: [],
         following: 0,
         public_repos: 0,
     });
+    const [followers, setFollowers] = useState<GithubFollowers[]>([]);
 
     useEffect(() => {
-        const fetchUser = async () => {
+        const fetchData = async () => {
             const userData = await fetchGithubUser();
             setUser(userData);
+
+            const followersData = await fetchGithubFollowers();
+            setFollowers(followersData);
         };
-        fetchUser();
+        fetchData();
     }, []);
 
     return (
@@ -152,7 +161,7 @@ const AboutMe = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
                 <Alert>
                     <AlertTitle className="flex items-center font-bold justify-center mb-2">
-                        <FaCode className="mr-2" /> Coding Experience 
+                        <FaCode className="mr-2" /> Coding Experience
                     </AlertTitle>
                     <AlertDescription>
                         Im a software developer student im in my last year of my study. I have experience with multiple languages and frameworks.
@@ -175,6 +184,25 @@ const AboutMe = () => {
                     </AlertDescription>
                 </Alert>
             </div>
+            <div>
+                {followers.length > 0 && (
+                    <div className="max-w-6xl mx-auto mt-12">
+                        <h4 className="text-2xl font-bold text-foreground mb-4 text-center">Followers</h4>
+                        <div className="flex flex-wrap gap-4 justify-center">
+                            {followers.map((follower, index) => (
+                                <div key={index} className="flex flex-col items-center">
+                                    <Avatar className="w-16 h-16 rounded-full overflow-hidden border-4 border-chart-1 shadow-lg">
+                                        <AvatarFallback>TK</AvatarFallback>
+                                        <AvatarImage src={follower.avatar_url} alt="Follower" loading="lazy" />
+                                    </Avatar>
+                                    <span className="text-sm text-gray-400 mt-2">{follower.login}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+            </div>
+
         </section>
     );
 }
