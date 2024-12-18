@@ -151,27 +151,27 @@ const AboutMe = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
                 <Alert>
-                    <AlertTitle className="flex items-center font-bold justify-center">
-                        {/* <FaCode className="mr-2" /> Coding Experience  */}
+                    <AlertTitle className="flex items-center font-bold justify-center mb-2">
+                        <FaCode className="mr-2" /> Coding Experience 
                     </AlertTitle>
                     <AlertDescription>
-                        {/* Over 5 years of professional experience in software development, with a focus on web technologies. */}
+                        Im a software developer student im in my last year of my study. I have experience with multiple languages and frameworks.
                     </AlertDescription>
                 </Alert>
                 <Alert>
-                    <AlertTitle className="flex items-center font-bold justify-center">
-                        {/* <FaLaptopCode className="mr-2" /> Projects Completed */}
+                    <AlertTitle className="flex items-center font-bold justify-center mb-2">
+                        <FaServer className="mr-2" /> Backend Development
                     </AlertTitle>
                     <AlertDescription>
-                        {/* Successfully delivered 20+ projects, ranging from small business websites to complex enterprise applications. */}
+                        I have experience with backend development with Node.js and Express. I have also worked with databases like MySQL and PostgreSQL.
                     </AlertDescription>
                 </Alert>
                 <Alert>
-                    <AlertTitle className="flex items-center font-bold justify-center">
-                        {/* <SiGithub className="mr-2" /> Open Source */}
+                    <AlertTitle className="flex items-center font-bold justify-center mb-2">
+                        <SiGithub className="mr-2" /> Open Source
                     </AlertTitle>
                     <AlertDescription>
-                        {/* Active contributor to several open-source projects, with over 500 commits on GitHub. */}
+                        I have contributed to multiple open-source projects and have a few projects of my own.
                     </AlertDescription>
                 </Alert>
             </div>

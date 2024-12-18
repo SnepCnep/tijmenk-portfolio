@@ -33,6 +33,7 @@ export default async function Home() {
       <Projects />
 
       {/* Blog Section */}
+      
     </main >
   );
 }
