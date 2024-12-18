@@ -5,21 +5,21 @@ import { projects } from "@/config";
 import ProjectCard from "@/components/projectShowCase";
 
 // Types
-interface ProjectLink {
+interface LinkObj {
     name: string;
-    type: string;
+    type?: string;
     url: string;
-}
-
-interface Project {
+  }
+  
+  interface ProjectCardProps {
     title: string;
     description: string;
-    links?: ProjectLink[];
-    tags?: string[];
-    year?: number;
+    links: LinkObj[];
+    tags: string[];
+    year?: number | string;
     role?: string;
     status?: string;
-}
+  }
 
 
 const Projects = () => {
@@ -30,7 +30,7 @@ const Projects = () => {
         >
             <h3 className="text-4xl font-bold text-foreground mb-12">My Projects</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {projects && projects.map((project, index) => (
+                {projects && projects.map((project: ProjectCardProps, index: number) => (
                     <ProjectCard key={index} {...project} />
                 ))}
             </div>

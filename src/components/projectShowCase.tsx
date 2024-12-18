@@ -32,6 +32,7 @@ const tagIconMap: { [key: string]: JSX.Element } = {
   "Jest": <SiJest className="mr-1" size={14} />
 };
 
+// Types
 interface LinkObj {
   name: string;
   type?: string;
