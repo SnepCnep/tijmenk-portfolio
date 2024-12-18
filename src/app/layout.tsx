@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TijmenK",
   description: "Mijn naam is Tijmen en ik ben een software ontwikkelaar.",
+  keywords: ["Tijmen", "Software Developer", "Portfolio", "Tijmen Krul"],
+  authors: [{ name: "Tijmen" }],
+  robots: "index, follow",
 };
 
 export default function RootLayout({
