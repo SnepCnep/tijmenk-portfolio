@@ -27,7 +27,6 @@ interface GithubUser {
 
 interface GithubFollowers {
     avatar_url: string;
-    login: string;
 }
 
 // Icons
@@ -191,11 +190,10 @@ const AboutMe = () => {
                         <div className="flex flex-wrap gap-4 justify-center">
                             {followers.map((follower, index) => (
                                 <div key={index} className="flex flex-col items-center">
-                                    <Avatar className="w-16 h-16 rounded-full overflow-hidden border-4 border-chart-1 shadow-lg">
+                                    <Avatar className="w-12 h-12 rounded-full overflow-hidden border-4 border-chart-1 shadow-lg">
                                         <AvatarFallback>TK</AvatarFallback>
                                         <AvatarImage src={follower.avatar_url} alt="Follower" loading="lazy" />
                                     </Avatar>
-                                    <span className="text-sm text-gray-400 mt-2">{follower.login}</span>
                                 </div>
                             ))}
                         </div>
