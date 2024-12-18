@@ -1,5 +1,5 @@
 # TijmenK Portfolio Website
 
 ## Domain's
-- TIimenK.nl
+- Tijmen.nl
 - TijmenK.com
