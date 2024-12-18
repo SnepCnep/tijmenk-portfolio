@@ -102,7 +102,7 @@ const ProjectCard = ({
                   return (
                     <Badge
                       key={tIndex}
-                      className="text-xs font-medium flex items-center bg-primary text-zinc-900 px-2 py-1 rounded-full"
+                      className="text-xs font-medium flex items-center bg-primary text-gray-350 px-2 py-1 rounded-full"
                     >
                       {Icon}
                       {tag}
